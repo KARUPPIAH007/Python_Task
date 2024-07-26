@@ -1,50 +1,17 @@
-def calclulate_grade(mark):
-    grade={
+def main():
+    grades={100:'O',90:'A+',80:'A',70:'B+',60:'B',50:'C',40:'D',30:'F',20:'F',10:'F'}
+    size = int(input("enter number of subjects "))
+    subject_marks=[]
+    for i in range(size): 
+        mark=int(input("enter mark "))
+        subject_marks.append(mark)
+    print(subject_marks)
+    avg = sum(subject_marks)//len(subject_marks)
+    print(avg)
+    for i in range(100,0,-10):
+        if avg >= i and avg>=i-10:
+            print("your grade is ",grades[i])
+            break
 
-        90:"A",
-
-        80:"B",
-
-        70:"C",
-
-        60:"D",
-
-        40:"E",
-
-        39:"Fail",
-
-    }
-
-    print("Your grade is ",grade[mark])
-
-def main(mark):
-
-    if mark>=90:
-
-        mark=90
-
-    elif mark>=80:
-
-        mark=80
-
-    elif mark>=70:
-
-        mark=70
-
-    elif mark>=60:
-
-        mark=60
-
-    elif mark>=40:
-
-        mark=40
-
-    else:
-
-        mark=39
-    calclulate_grade(mark)
-
-if __name__ == "__main__":
-
-    main(int(input("Enter your mark : ")))
- 
+if __name__ =="__main__":
+        main()
