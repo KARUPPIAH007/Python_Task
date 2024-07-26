@@ -13,4 +13,4 @@ def main():
         print('File Deleted Successfuly')
     
 if __name__=="__main__":
-    main
+    main()
