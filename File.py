@@ -5,7 +5,7 @@ def CreateFile(file_name):
         print("Filer already exists")
     else:
         file_create=open(file_name,'w')
-        file_create.write(input("Enter fiel content"))
+        file_create.write(input("Enter file content"))
 
 def read_file(input_filename):
     file= open(input_filename, 'r') 
